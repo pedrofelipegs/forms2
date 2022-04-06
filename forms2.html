@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Modelo de Avaliação </title>
+    <style type="text/css">
+      textarea{
+        resize: none;
+        border: 2px solid skyblue;
+      }
+      fieldset{
+        border: 2px solid black;
+      }
+      button{
+        background-color: skyblue;
+        border: 2px solid black;
+        color: black;
+      }
+    </style>
+    <body>
+      <form>
+      <legend> <center> <h1> Modelo de Avaliação de JS Prática </center> </h1> </legend>
+      <fieldset>
+     <legend> <strong> 1. Quais cursos são ofertados na EEEP Amélia Figueiredo de Lavor? </strong>
+    </legend>
+      <textarea rows ="10" cols="110" id="cursos"> </textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend> <strong> 2. Marca as opções que possui os sistemas de numerações novos que aprendemos no 1° de Informática. </strong>
+      </legend>
+          <label for="if"> Sistema Octal </label>
+          <input type="checkbox" id="if">
+        <p>
+          <label for="at"> Sistema Binário </label>
+          <input type="checkbox" id="at">
+        <p>
+          <label for="ut"> Sistema Decimal </label>
+          <input type="checkbox" id="ut">
+        <p>
+          <label for="ot"> Algarismos Hexadecimal </label>
+          <input type="checkbox" id="ot">
+    </fieldset>
+    <br>
+    <fieldset>
+          <legend> <strong> 3. Qual o produto abaixo é mais adequado para limpar uma memória RAM? </strong> </legend>
+            <label for="if2"> Álcool Isopropílico </label>
+          <input type="radio" name="if" id="if2">
+        <p>
+          <label for="at2"> Limpa Contato </label>
+          <input type="radio" name="if" id="at2">
+        <p>
+          <label for="ut2"> Álcool 70% </label>
+          <input type="radio" name="if" id="ut2">
+        <p>
+          <label for="ot2"> Água </label>
+          <input type="radio" name="if" id="ot2">
+    </fieldset>
+    <br>
+    <fieldset>
+          <legend> <strong> 4. Podemos afirmar que o modo de funcionamento de memória RAM em DUAL CHANEL só pode ser feito com pares de módulos de memória. Marque se a afirmação é verdade ou falsa. </strong> </legend>
+          <label for="if3"> Verdadeira </label>
+          <input type="radio" name="at" id="if3">
+        <p>
+          <label for="at3"> Falsa </label>
+          <input type="radio" name="at" id="at3">
+    </fieldset>
+
+        <p><button type="button" onclick="pegarDados()"> Corrigir </button> </p> 
+       </form>
+       <div class="hide"> </div>
+       <div id="validText"></div>
+       <div id="campIf"></div> 
+       <div id="campAt"></div>
+       <div id="campUt"></div>
+       <div id="campOt"></div> 
+       <div id="campRad"></div>
+       <div id="campRad2"></div>
+
+<script src="script4.js"> </script>
+    </body>
+  </head>
+</html>
